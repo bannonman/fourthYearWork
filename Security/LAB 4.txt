@@ -1,0 +1,36 @@
+Corey Bannon
+C11342611
+DT228/4
+
+PART 1-Done
+
+PART 2-TOR 
+	Use
+	Tor is used for annonmous web browsing, it can also be used for accessing 
+	the deep web. 
+
+	Danger
+	A danger of using tor as your main browser is that if you access your gmail, 
+	google will stop your email account from recieving and sending email.
+
+PART 3-Clock
+	There are three main types of clock attachs including, setting the clock back,
+	stopping the clock and setting the clock forward. 
+	
+	Setting The Clock Back
+	By setting the clock back, a user can trigger a automated program to repeat itself.
+	An example of this, if a company has automated program to pay its employees at 
+	a specific time during the week or month, an attacker can set the time back to before 
+	the time that the payments are issued. The atacker can then repeat the process until 
+	the companies bank account is empty.   
+
+	Stopping The Clock
+	If the clock is stopped, programs that rely on time will start to behave unpredictably. 
+	A Gui program that has to refresh every few seconds to display data will stop working 
+	and the wrong data will be displayed to the user. 
+	
+	Setting The Clock Forward
+	If a clock is set in the future, there can be a drastic effect. An example of this is, 
+	if a company has a system that relies on time to bill people. If the time on this system 
+	is set in the future by a few months, the users can be billed for months of usage. If the 
+	users have a direct debit with the billing company they can lose all of there money.  
