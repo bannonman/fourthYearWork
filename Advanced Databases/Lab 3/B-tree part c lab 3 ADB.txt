@@ -1,0 +1,3 @@
+C, Binary tree nodes are stored in random order in memory,
+   this is a lot slower than accessing memory using the 
+   B-tree search. 

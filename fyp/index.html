@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/styles.css?v=1.2" rel="stylesheet">
+</head>
+<body>
+	<div style="width:1000px;height:1000px; margin:0 auto;background-color:#C0C0C0;">
+		<div style="width:900px;height:600px; margin:0 auto;background-color:#FFFFFF;" >
+        Live Feed Loading.....
+		<script src="http://heartcode-canvasloader.googlecode.com/files/heartcode-canvasloader-min-0.9.1.js"></script>							
+		
+		<!-- Create a div which will be the canvasloader wrapper -->	
+		<div id="canvasloader-container" style="margin:0 auto;" class="wrapper"></div>
+			
+	<!-- This script creates a new CanvasLoader instance and places it in the wrapper div -->
+		<script type="text/javascript">
+			var cl = new CanvasLoader('canvasloader-container');
+			cl.setColor('#0e4f96'); // default is '#000000'
+			cl.setShape('spiral'); // default is 'oval'
+			cl.setDiameter(35); // default is 40
+			cl.setDensity(29); // default is 40
+			cl.setRange(1.0); // default is 1.3
+			cl.setSpeed(1); // default is 2
+			cl.setFPS(60); // default is 24
+			cl.show(); // Hidden by default
+			
+			// This bit is only for positioning - not necessary
+			  var loaderObj = document.getElementById("canvasLoader");
+			loaderObj.style.position = "absolute";
+			loaderObj.style["top"] = cl.getDiameter() * -0.5 + "px";
+			loaderObj.style["left"] = cl.getDiameter() * -0.5 + "px";
+		</script>
+	</div>
+		<div style="width:700px;height:400px; margin:0 auto;background-color:#A0A0A0;">
+		<br>
+		<div style="width:30px; margin:100px 100px;background-color:#A0A0A0;">
+			<button type="button" accesskey="w">/\</button><br><br>
+			<button type="button" accesskey="s">\/</button>
+		</div>
+		<div style="width:130px;height:160px; margin:-160px auto;background-color:#A0A0A0;">
+			<font size="2"><p>Alt+w = Ascend</p>
+				<p>Alt+s = Descend</p>
+				<p>Alt+i = Forward</p>
+				<p>Alt+j = Left</p>
+				<p>Alt+k = Backwards</p>
+				<p>Alt+l = Right</p>
+			</font>
+		</div>
+		<div style="width:200px;height:200px; margin:50px 500px;background-color:#A0A0A0;">
+			<div style="width:95px; margin:-210px auto;background-color:#A0A0A0;">
+				<p class="tabup"><button type="button" accesskey="i">/\</button></p>
+				<button type="button" accesskey="j"><</button>
+				<button type="button" accesskey="k">\/</button>
+				<button type="button" accesskey="l">></button>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

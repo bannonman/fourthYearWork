@@ -1,0 +1,10 @@
+INSERT INTO exam VALUES('1111', 0.6, 0.4, 'exam1');
+INSERT INTO exam VALUES('2222', 0.3, 0.7, 'exam2');
+INSERT INTO exam VALUES('3333', 0.4, 0.6, 'exam3');
+INSERT INTO results VALUES('C1111111', '1111', 60, 40);
+INSERT INTO results VALUES('C2222222', '2222', 20, 70);
+INSERT INTO results VALUES('C3333333', '3333', 40, 60);
+INSERT INTO student VALUES('C1111111', 'Tom', 'Tom');
+INSERT INTO student VALUES('C2222222', 'Jane', 'John');
+INSERT INTO student VALUES('C3333333', 'June', 'July');
+commit;

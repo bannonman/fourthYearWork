@@ -1,0 +1,28 @@
+ --Query 1 
+ select * from persons;
+ --Query 2
+ select * from persons where person_id > 1000 and person_id < 3000 ; 
+ --Query 3
+ select * from persons where person_id + 5 > 1000 and person_id < 3000;
+ --Query 4
+ select * from persons where person_id+5 > 1000 and person_id*2 < 3000;
+ --Query 5
+ select person_age, count(person_id) from persons group by person_age;
+ 
+--Query 6
+select jobs.jobs_id,jobs.job_description, jobs.salary, jobs_person.person_id 
+from jobs inner join jobs_person 
+on jobs.jobs_id = jobs_person.jobs_id 
+where jobs_person.jobs_id=34; 
+
+--Query 7
+select p.person_name, j.salary, j.job_description 
+from persons p inner join jobs_person jp on p.person_id = jp.person_id 
+inner join jobs j on jp.jobs_id=j.jobs_id 
+where jp.start_date> '01-JAN-2003' and jp.end_date < '31-DEC-03'; 
+
+ALTER TABLE persons ADD CONSTRAINT PK_personID PRIMARY KEY (person_id);
+
+create index p_age on persons(person_age); 
+
+ 
