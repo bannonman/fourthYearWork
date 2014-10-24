@@ -114,7 +114,7 @@ public class primeNumGen
 		        if(n%i==0)
 		            return false;
 		    }
-		    System.out.print("Prime");
+		    
 		    return true;
 		
 	}

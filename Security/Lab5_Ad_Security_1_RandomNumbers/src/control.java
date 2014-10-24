@@ -39,7 +39,13 @@ public class control {
 				for(int i = 0 ; i < 10 ; i ++)
 				{
 					seed = msm.middleSquareMethod(seed); 
-					System.out.println(seed);
+					System.out.print(seed);
+					if(png.primeCheck((long)seed) == false)
+					{
+						System.out.println(" ");
+					}else{
+						System.out.println(" is Prime!");
+					}
 				}
 			}
 			//calls the Xor shift method.
@@ -56,7 +62,13 @@ public class control {
 					seed = (int) xor.randomLong(seed);
 					
 					System.out.print(seed);
-					System.out.println(" : " + i);
+					
+					if(png.primeCheck((long)seed) == false)
+					{
+						System.out.println(" ");
+					}else{
+						System.out.println(" is Prime!");
+					}
 				}
 				
 			}
@@ -74,6 +86,13 @@ public class control {
 				seed = xor.randomLong(seed);
 				
 				System.out.print(seed);
+				
+				if(png.primeCheck((long)seed) == false)
+				{
+					System.out.println(" ");
+				}else{
+					System.out.println(" is Prime!");
+				}
 			}
 			//Prime Generator method
 			if("GenPrime".equals(todo))
