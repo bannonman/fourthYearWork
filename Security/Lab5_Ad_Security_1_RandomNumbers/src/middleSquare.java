@@ -1,42 +1,44 @@
-import java.util.Scanner;
+/*
+ *Corey Bannon 
+ *C11342611
+ *DT228/4
+ *Advanced Security 1 
+ */
 
 public class middleSquare 
-{
-	public int middleSquareMethod(int seed)// Middle-Square Method
+{	// Middle-Square Method
+	public int middleSquareMethod(int seed)
 	{
-		int total; 
+		int total,totalSize, size;
+		int k = 0; 
+		int i = 0;
+		int count = 0;
 		
-	    total = seed * seed;
-	  
-	    int size = String.valueOf(seed).length();
-	    int totSize = String.valueOf(total).length();
-	   
-	    StringBuilder  middle = new StringBuilder();
-	    
+		total = seed * seed;
+		size = String.valueOf(seed).length();
+		totalSize = String.valueOf(total).length();
+		
+		StringBuilder  middle = new StringBuilder();
 	    String nums;
+	    
 	    nums = Long.toString(total);
 	    
-	    int k;
-	    int i;
-	   
-	    if(totSize % 2 == 0)
-	    {
-	    	k = totSize / 2;
-	    }else{
-	    	k = (totSize -1) /2;
+	  //checks to see if the total size is even or odd
+	    if(totalSize % 2 == 0)
+	    {	//if even then divide the number in half
+	    	k = totalSize / 2;
+	    }else{//if odd then subtract one from the number to make it even then divide by 2
+	    	k = (totalSize -1) / 2;
 	    }
 	    
-	    for(i = k -1 ; i < totSize ;)
-	    {
-	    	if(i == k + size-1)
-	    		break;
+	    i = (k - 1);
+	    do{
 	    	middle.append(nums.charAt(i));
-	    	System.out.print(nums.charAt(i));
-	    	return nums.charAt(i);
-	    }
-	   
-	   nums = middle.toString();
-	   seed = Integer.parseInt(nums);
-	   return seed = 0;
+	    	i = i + 1;
+	    	
+	    	count ++;
+	    }while(count != size );
+	    
+	    return Integer.parseInt(middle.toString());
 	}
 }

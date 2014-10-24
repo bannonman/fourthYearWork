@@ -1,8 +1,16 @@
+/*
+ *Corey Bannon 
+ *C11342611
+ *DT228/4
+ *Advanced Security 1 
+ */
+
 import java.util.Scanner;
 
-
+//prime number method.
 public class primeNumGen
 {
+	//prime number generator
 	public void primeGen(){
 		int num; 
 	      
@@ -24,14 +32,14 @@ public class primeNumGen
 				}
 	          
 			}
-			
+			//if the number is prime then print it out
 			if(Prime)
 			{
 				System.out.println("Prime: "+ i);
 			}
 		}      
 	}
-	
+	//retuns a large prime number
 	public int longPrime(int num)
 	{
 		int i = 0;
@@ -48,7 +56,7 @@ public class primeNumGen
 					break;
 				}
 			}
-			
+			//if the number is prime then print it out
 			if(Prime)
 			{
 				
@@ -61,6 +69,8 @@ public class primeNumGen
 		}
 		    
 	}
+	
+	//returns the next prime number based on the number entered
 	public void nextPrime()
 	{
 		int num; 
@@ -82,7 +92,7 @@ public class primeNumGen
 					break;
 				}
 			}
-			
+			//if the number is prime then print it out and break from the program.
 			if(Prime)
 			{
 				System.out.println("Prime: "+ i);
@@ -92,8 +102,8 @@ public class primeNumGen
 			}
 		}
 	}
-		
-
+	//this method checks to see if a number is prime, 
+	//it also returns true or false
 	public boolean primeCheck(Long n){
 		//checks whether an int is prime or not.
 		
