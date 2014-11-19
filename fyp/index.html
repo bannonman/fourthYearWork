@@ -17,9 +17,9 @@
 			<source src="http://192.168.0.27:8160" />
 				Your browser doesn't appear to support the HTML5 <code>&lt;video&gt;</code> element.  
 		</video>-->
-        <!--Live Feed Loading.....
+        Live Feed Loading.....
 		<script src="http://heartcode-canvasloader.googlecode.com/files/heartcode-canvasloader-min-0.9.1.js"></script>							
-		-->
+		
 		<!-- Create a div which will be the canvasloader wrapper -->	
 		<div id="canvasloader-container" style="margin:0 auto;" class="wrapper"></div>
 			
@@ -34,9 +34,8 @@
 			cl.setSpeed(1); // default is 2
 			cl.setFPS(60); // default is 24
 			cl.show(); // Hidden by default
-			
 			// This bit is only for positioning - not necessary
-			  var loaderObj = document.getElementById("canvasLoader");
+			var loaderObj = document.getElementById("canvasLoader");
 			loaderObj.style.position = "absolute";
 			loaderObj.style["top"] = cl.getDiameter() * -0.5 + "px";
 			loaderObj.style["left"] = cl.getDiameter() * -0.5 + "px";
@@ -45,8 +44,8 @@
 	<div style="width:173px;height:40px; margin:10px 20px;background-color:#C0C0C0;">
 			<font size="3">
 				<form action="">
-					Connected to: <input type="text" name="IPAddress" value="127.0.0.1"><br>
-					<input type="submit" value="Change IP">
+					Connected to: <input type="text" name="IPAddress" style="width: 100px;" value="192.168.0.26"><br>
+					<input type="submit" class="btn" value="Change IP">
 				</form>
 			</font>
 		</div>
@@ -60,10 +59,10 @@
 			</label>
 		</div>
 		<div style="width:30px; margin:70px 100px;background-color:#A0A0A0;">
-			<button type="button" accesskey="w">/\</button><br><br>
-			<button type="button" accesskey="s">\/</button>
+			<button type="button" accesskey="w" class="btn" id="up">/\</button><br><br>
+			<button type="button" accesskey="s" class="btn" id="down">\/</button>
 		</div>
-		<div style="width:130px;height:160px; margin:-160px 200px;background-color:#A0A0A0;">
+		<div style="width:130px;height:160px; margin:-160px 200px;background-color:#A0A0A0; ">
 			<font size="2">
 				<p>Alt+w = Ascend</p>
 				<p>Alt+s = Descend</p>
@@ -76,10 +75,10 @@
 		<div style="width:200px;height:200px; margin:50px 300px;background-color:#A0A0A0;">
 			<div style="width:95px; margin:-180px auto;background-color:#A0A0A0;">
 				<p class="tabup">
-				<button type="button" accesskey="i">/\</button></p>
-				<button type="button" accesskey="j"><</button>
-				<button type="button" accesskey="k">\/</button>
-				<button type="button" accesskey="l">></button>
+				<button type="button" accesskey="i"class="btn" id="fwd">/\</button></p>
+				<button type="button" accesskey="j"class="btn" id="left"><</button>
+				<button type="button" accesskey="k"class="btn" id="bwd">\/</button>
+				<button type="button" accesskey="l"class="btn" id="right">></button>
 			</div>
 		</div>
     </div>
