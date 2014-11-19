@@ -4,11 +4,22 @@
 	<link href="css/styles.css?v=1.2" rel="stylesheet">
 </head>
 <body>
-	<div style="width:1000px;height:1000px; margin:0 auto;background-color:#C0C0C0;">
-		<div style="width:900px;height:600px; margin:0 auto;background-color:#FFFFFF;" >
-        Live Feed Loading.....
+	<div style="width:1000px;height:700px; margin:0 auto;background-color:#C0C0C0;">
+		<div style="width:600px;height:300px; top:20px ;  border: 1px  solid black;margin:0  auto;background-color:#FFFFFF;" >
+		<!--<video 
+			width="900px"
+			height="600px"
+			src="http://192.168.0.27:8160" 
+			autoplay="autoplay"
+			id="vlc">
+		</video>-->
+		<!--<video id="video" class="projekktor" autoplay="autoplay" width="300px" preload="metadata">  
+			<source src="http://192.168.0.27:8160" />
+				Your browser doesn't appear to support the HTML5 <code>&lt;video&gt;</code> element.  
+		</video>-->
+        <!--Live Feed Loading.....
 		<script src="http://heartcode-canvasloader.googlecode.com/files/heartcode-canvasloader-min-0.9.1.js"></script>							
-		
+		-->
 		<!-- Create a div which will be the canvasloader wrapper -->	
 		<div id="canvasloader-container" style="margin:0 auto;" class="wrapper"></div>
 			
@@ -31,14 +42,30 @@
 			loaderObj.style["left"] = cl.getDiameter() * -0.5 + "px";
 		</script>
 	</div>
-		<div style="width:700px;height:400px; margin:0 auto;background-color:#A0A0A0;">
+	<div style="width:173px;height:40px; margin:10px 20px;background-color:#C0C0C0;">
+			<font size="3">
+				<form action="">
+					Connected to: <input type="text" name="IPAddress" value="127.0.0.1"><br>
+					<input type="submit" value="Change IP">
+				</form>
+			</font>
+		</div>
+		<div style="width:500px;height:400px; margin:-60px auto;background-color:#A0A0A0;">
 		<br>
-		<div style="width:30px; margin:100px 100px;background-color:#A0A0A0;">
+		<div class="onoffswitch" style=" margin:0 auto;">
+			<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+			<label class="onoffswitch-label" for="myonoffswitch">
+				<span class="onoffswitch-inner"></span>
+				<span class="onoffswitch-switch"></span>
+			</label>
+		</div>
+		<div style="width:30px; margin:70px 100px;background-color:#A0A0A0;">
 			<button type="button" accesskey="w">/\</button><br><br>
 			<button type="button" accesskey="s">\/</button>
 		</div>
-		<div style="width:130px;height:160px; margin:-160px auto;background-color:#A0A0A0;">
-			<font size="2"><p>Alt+w = Ascend</p>
+		<div style="width:130px;height:160px; margin:-160px 200px;background-color:#A0A0A0;">
+			<font size="2">
+				<p>Alt+w = Ascend</p>
 				<p>Alt+s = Descend</p>
 				<p>Alt+i = Forward</p>
 				<p>Alt+j = Left</p>
@@ -46,9 +73,10 @@
 				<p>Alt+l = Right</p>
 			</font>
 		</div>
-		<div style="width:200px;height:200px; margin:50px 500px;background-color:#A0A0A0;">
-			<div style="width:95px; margin:-210px auto;background-color:#A0A0A0;">
-				<p class="tabup"><button type="button" accesskey="i">/\</button></p>
+		<div style="width:200px;height:200px; margin:50px 300px;background-color:#A0A0A0;">
+			<div style="width:95px; margin:-180px auto;background-color:#A0A0A0;">
+				<p class="tabup">
+				<button type="button" accesskey="i">/\</button></p>
 				<button type="button" accesskey="j"><</button>
 				<button type="button" accesskey="k">\/</button>
 				<button type="button" accesskey="l">></button>
